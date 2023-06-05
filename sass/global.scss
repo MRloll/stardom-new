@@ -1,0 +1,111 @@
+@import "./helpers.scss";
+@import "./locales-direction.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;600;800;900;1000&family=Roboto:wght@100&display=swap");
+@font-face {
+  font-family: "Century Gothic";
+  src: url("../fonts/Century\ Gothic.ttf") format("truetype");
+}
+
+.loader {
+  position: fixed;
+  z-index: 3;
+  background: rgba($color: $primary, $alpha: 0.8);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1,
+h2 {
+  font-weight: 700;
+}
+
+.container {
+  max-width: unset !important;
+  width: 90% !important;
+}
+
+@media #{$extraSmall} {
+  .container {
+    width: 100% !important;
+  }
+}
+
+@media #{$extraLarge} {
+  .container {
+    max-width: 1400px !important;
+  }
+}
+
+.heading {
+  text-align: center;
+  h1 {
+    font-weight: 800;
+    font-size: 27.19px;
+  }
+  .divider {
+    width: 48.72px;
+    height: 5.28px;
+    background: $primary;
+    border-radius: 40px;
+    margin: 30px auto;
+  }
+}
+
+.text-end {
+  text-align: end;
+}
+
+section {
+  padding: 60px 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit !important;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.overlay {
+  &::after {
+    content: "";
+    @include overlay(#000);
+    @include opacity(80%);
+    z-index: -1;
+  }
+}
+
+.button {
+  width: 137px;
+  height: 45.06px;
+  background: #b82228;
+  color: white;
+  font-weight: 900;
+  font-size: 14.34px;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  outline: 0;
+  border: none;
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+  &.to-red:hover {
+    background: $primary !important;
+    color: white;
+  }
+  &.to-white:hover {
+    background: white !important;
+    color: $primary !important;
+  }
+  &.to-black:hover {
+    background: #3a3839 !important;
+    color: white !important;
+  }
+}
+
+// globa card

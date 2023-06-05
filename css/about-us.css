@@ -1,0 +1,37 @@
+.about-us p {
+  line-height: 37px;
+  font-weight: 400;
+  font-size: 18px;
+}
+.about-us .top img.img-fluid {
+  width: 100%;
+}
+.about-us .top .wrapper h5 {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 37px;
+  margin: 0 10px;
+  color: #b82228;
+}
+.about-us .features .head {
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+.about-us .features .head img {
+  width: 25px;
+}
+.about-us .features .head h5 {
+  margin: 0 10px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  color: #b82228;
+}
+.about-us .features ol {
+  padding: 13px;
+}
+.about-us .features ol li {
+  margin-bottom: 10px;
+}
+
+/*# sourceMappingURL=about-us.css.map */

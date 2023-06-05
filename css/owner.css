@@ -1,0 +1,23 @@
+* {
+  color: white;
+}
+
+.manger-word * {
+  color: black;
+}
+.manger-word .img img {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.manger-word .heading {
+  text-align: left;
+  margin-top: 50px;
+}
+.manger-word .text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 37px;
+}
+
+/*# sourceMappingURL=owner.css.map */

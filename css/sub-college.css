@@ -1,0 +1,27 @@
+.sub-college .head h4 {
+  font-weight: 500;
+  font-size: 28px;
+  color: #b82228;
+  margin: 0 10px;
+}
+.sub-college .colleges .college {
+  box-shadow: 0px 0px 14px rgba(97, 97, 97, 0.14);
+  margin-bottom: 15px;
+}
+.sub-college .colleges .college a {
+  width: 100%;
+  padding: 20px;
+  display: block;
+  font-weight: 500;
+  font-size: 27.08px;
+  color: #565454 !important;
+}
+.sub-college .colleges .college a::before {
+  position: relative;
+  content: "\f054";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 10px;
+}
+
+/*# sourceMappingURL=sub-college.css.map */

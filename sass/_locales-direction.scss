@@ -1,0 +1,24 @@
+html[dir="rtl"] {
+  *:not(i) {
+    font-family: "Cairo", sans-serif;
+  }
+  body {
+    text-align: right;
+  }
+}
+
+html[dir="ltr"] {
+  *:not(i) {
+    font-family: "Century Gothic", sans-serif;
+  }
+  .news {
+    .wrapper {
+      .fa-long-arrow-alt-left {
+        display: none;
+      }
+      .fa-long-arrow-alt-right {
+        display: inline;
+      }
+    }
+  }
+}

@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;600;800;900;1000&family=Roboto:wght@100&display=swap");
+html[dir=rtl] *:not(i) {
+  font-family: "Cairo", sans-serif;
+}
+html[dir=rtl] body {
+  text-align: right;
+}
+
+html[dir=ltr] *:not(i) {
+  font-family: "Century Gothic", sans-serif;
+}
+html[dir=ltr] .news .wrapper .fa-long-arrow-alt-left {
+  display: none;
+}
+html[dir=ltr] .news .wrapper .fa-long-arrow-alt-right {
+  display: inline;
+}
+
+@font-face {
+  font-family: "Century Gothic";
+  src: url("../fonts/Century Gothic.ttf") format("truetype");
+}
+.loader {
+  position: fixed;
+  z-index: 3;
+  background: rgba(184, 34, 40, 0.8);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+}
+
+.container {
+  max-width: unset !important;
+  width: 90% !important;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 100% !important;
+  }
+}
+@media (min-width: 1904px ) {
+  .container {
+    max-width: 1400px !important;
+  }
+}
+.heading {
+  text-align: center;
+}
+.heading h1 {
+  font-weight: 800;
+  font-size: 27.19px;
+}
+.heading .divider {
+  width: 48.72px;
+  height: 5.28px;
+  background: #b82228;
+  border-radius: 40px;
+  margin: 30px auto;
+}
+
+.text-end {
+  text-align: end;
+}
+
+section {
+  padding: 60px 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit !important;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.overlay::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #000;
+  zoom: 1;
+  filter: alpha(opacity=8000%);
+  opacity: 80%;
+  z-index: -1;
+}
+
+.button {
+  width: 137px;
+  height: 45.06px;
+  background: #b82228;
+  color: white;
+  font-weight: 900;
+  font-size: 14.34px;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  outline: 0;
+  border: none;
+  cursor: pointer;
+}
+.button:focus {
+  outline: none;
+}
+.button.to-red:hover {
+  background: #b82228 !important;
+  color: white;
+}
+.button.to-white:hover {
+  background: white !important;
+  color: #b82228 !important;
+}
+.button.to-black:hover {
+  background: #3a3839 !important;
+  color: white !important;
+}
+
+/*# sourceMappingURL=global.css.map */
