@@ -73,6 +73,16 @@ $(document).ready(function () {
     ],
   });
 
+  $(window).on("scroll", function () {
+    // making the nav sticky to the top
+    if ($(window).scrollTop() > $(".toolbar").height()) {
+      // give nav links position fixed on scroll
+      $("nav").addClass("sticked");
+    } else {
+      $("nav").removeClass("sticked");
+    }
+  });
+
   //============================================
   //  what we do section (chevron) and slide down
   //============================================
