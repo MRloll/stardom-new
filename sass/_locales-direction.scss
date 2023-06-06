@@ -5,6 +5,11 @@ html[dir="rtl"] {
   body {
     text-align: right;
   }
+  .sub-college .colleges .college a::before {
+    content: "\f104";
+    margin-left: 10px;
+    margin-right: 0;
+  }
 }
 
 html[dir="ltr"] {
@@ -19,6 +24,15 @@ html[dir="ltr"] {
       .fa-long-arrow-alt-right {
         display: inline;
       }
+    }
+    img.mx-3 {
+      transform: rotate(180deg);
+    }
+  }
+
+  aside {
+    i {
+      transform: rotate(180deg);
     }
   }
 }

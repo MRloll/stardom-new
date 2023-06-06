@@ -86,9 +86,10 @@ $(document).ready(function () {
   //============================================
   //  what we do section (chevron) and slide down
   //============================================
-  let bar = $("nav .bar");
+  let bar = $(".faq .content .bar");
+  let about = $(".about-us  .bar");
 
-  $(bar).on("click", function (e) {
+  $(".faq .content .bar, .about-us  .bar").on("click", function (e) {
     //getting the sibilibg's cheveron
     let siblingChev = $(this).parent().siblings(".skill").find(".cheveron");
 

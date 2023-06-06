@@ -35,6 +35,7 @@ header .toolbar .lang {
   text-transform: uppercase;
   margin-top: 10px;
   text-align: center;
+  cursor: pointer;
 }
 @media (min-width: 600px ) {
   header .toolbar .wrapper {
@@ -76,12 +77,17 @@ header nav li {
 }
 header nav .dropdown-menu {
   border: none;
-  background-color: #f9f8f8;
-  padding: 0;
+  background-color: #fff;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  padding: 15px;
 }
 header nav .dropdown-item {
   text-align: center;
   transition: all 0.3s ease;
+  border-bottom: 1px solid #ededed;
+  min-width: 222.38px;
+  padding: 10px;
 }
 header nav .dropdown-item.hover, header nav .dropdown-item:hover {
   background-color: #b82228;
@@ -110,7 +116,7 @@ header .carousel > div > div {
 }
 header .carousel .carousel-item {
   text-align: inherit;
-  height: 600px;
+  height: 546px;
 }
 header .carousel .carousel-item::after {
   content: "";
@@ -156,7 +162,7 @@ header .carousel .arrows {
   height: auto;
   position: absolute;
   bottom: 0;
-  left: 76px;
+  left: 140px;
   height: auto;
   display: flex;
   z-index: 1;
@@ -168,7 +174,7 @@ header .carousel .arrows a {
   margin: 0 2px;
   width: 56.03px;
   height: 52.67px;
-  background: #d6d6d6;
+  background: #a4a0a0;
   border-radius: 10px 10px 0px 0px;
 }
 header .nav-hide {
@@ -203,6 +209,11 @@ header .nav-hide {
   }
   header .nav-hide {
     display: none;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  header nav .nav-item a {
+    font-size: 13px;
   }
 }
 
@@ -286,6 +297,9 @@ header .nav-hide {
 
 .services .category-card {
   margin: 0 15px;
+}
+.services.acceptance .category-card {
+  margin: 0;
 }
 .services .container {
   direction: ltr;
@@ -519,7 +533,6 @@ header .nav-hide {
 }
 .footer img.logo {
   width: 100%;
-  margin: auto;
   display: block;
   margin-bottom: 20px;
 }

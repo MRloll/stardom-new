@@ -1,0 +1,338 @@
+header.pages-header {
+  position: relative;
+  height: 387px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header.pages-header .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.88);
+}
+header.pages-header .toolbar {
+  background: none;
+  color: black;
+  border-bottom: 1px solid #d5d5d5;
+}
+header.pages-header .toolbar .icons a {
+  border-color: black;
+}
+header.pages-header .heading h1 {
+  text-align: start;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 30px;
+}
+header.pages-header .heading ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+header.pages-header .heading ul li {
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 10px;
+}
+header.pages-header .heading ul li.divide {
+  margin: 10px 10px 0;
+}
+
+.manger-word .heading .divider {
+  width: 89.8px;
+  height: 7.52px;
+}
+.manger-word h1 {
+  text-align: start;
+}
+.manger-word p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 37px;
+}
+
+aside {
+  background: #f8f8f8;
+  padding: 10px 0;
+}
+aside ul li a,
+aside h3 a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+aside h3 {
+  background-color: white;
+  font-size: 20px;
+  line-height: 37px;
+  padding: 20px 10px;
+  font-weight: 700;
+}
+aside h3 a i {
+  font-size: 13px;
+}
+aside ul {
+  padding: 0;
+}
+aside ul li {
+  list-style: none;
+  padding: 0px 10px;
+}
+aside ul li a {
+  padding: 16px 0;
+  border-bottom: 1px solid #c1c1c1;
+  font-weight: 500;
+  font-size: 16px;
+}
+aside ul li a i {
+  font-size: 10px;
+}
+
+.about-us p {
+  line-height: 37px;
+  font-weight: 400;
+  font-size: 18px;
+}
+.about-us .top img.img-fluid {
+  width: 100%;
+}
+.about-us .top .wrapper h5 {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 37px;
+  margin: 0 10px;
+  color: #b82228;
+}
+.about-us .head-img {
+  height: 710.49px;
+}
+.about-us .head-img img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+.about-us .features .head {
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+.about-us .features .head img {
+  width: 25px;
+}
+.about-us .features .head h5 {
+  margin: 0 10px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  color: #b82228;
+}
+.about-us .features ol {
+  padding: 13px;
+}
+.about-us .features ol li {
+  margin-bottom: 10px;
+}
+
+.about-us .skills .skill,
+.faq .content .skills .skill {
+  margin-bottom: 17px;
+}
+.about-us .skills .skill.opened .bar,
+.faq .content .skills .skill.opened .bar {
+  border: 1px solid #b82228;
+  transition: 0.5s ease all;
+}
+.about-us .skills .skill.opened .cheveron,
+.faq .content .skills .skill.opened .cheveron {
+  border-top-color: #b82228 !important;
+  border-right-color: #b82228 !important;
+}
+.about-us .skills .skill .bar,
+.faq .content .skills .skill .bar {
+  height: 55.38px;
+  display: flex;
+  cursor: pointer;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px;
+  border: 1px solid #d7d7d7;
+}
+.about-us .skills .skill .bar h4,
+.faq .content .skills .skill .bar h4 {
+  font-weight: 500;
+  font-size: 16px;
+  margin: 0 10px;
+}
+.about-us .skills .skill .bar .bordered,
+.faq .content .skills .skill .bar .bordered {
+  padding: 10px;
+  border: 1px solid #d7d7d7;
+  border-radius: 5px;
+  margin: 0px 10px;
+}
+.about-us .skills .skill .bar .bordered .cheveron,
+.faq .content .skills .skill .bar .bordered .cheveron {
+  width: 15px;
+  height: 15px;
+  border: 3px solid black;
+  background-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  transition: 0.5s ease all;
+}
+.about-us .skills .skill .bar .cheveron-down,
+.faq .content .skills .skill .bar .cheveron-down {
+  transform: rotate(226deg);
+}
+.about-us .skills .skill .bar .cheveron-up,
+.faq .content .skills .skill .bar .cheveron-up {
+  transform: rotate(135deg);
+}
+.about-us .skills .skill .text,
+.faq .content .skills .skill .text {
+  display: none;
+  margin-top: 14px;
+  font-weight: 400;
+  font-size: 18px;
+  color: #5a5a5a;
+  padding: 15px;
+}
+.about-us .skills .skill .active,
+.faq .content .skills .skill .active {
+  display: block;
+}
+
+.global-card .course-wrapper {
+  background-color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 26px;
+}
+.global-card .course-wrapper:hover .text h3 {
+  color: #b82228;
+}
+.global-card .course-wrapper .img {
+  height: 231px;
+  overflow: hidden;
+}
+.global-card .course-wrapper .img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.global-card .course-wrapper .text {
+  text-align: center;
+  border: 1px solid #ececec;
+  color: #565454;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+.global-card .course-wrapper .text h3 {
+  margin: 0 auto;
+  color: inherit;
+  padding: 0 14px;
+  display: block;
+  width: 100%;
+  font-weight: 500;
+  font-size: 27.08px;
+  line-height: 34px;
+}
+
+.sub-college .head h4 {
+  font-weight: 500;
+  font-size: 28px;
+  color: #b82228;
+  margin: 0 10px;
+}
+.sub-college .img-college {
+  height: 665.72px;
+}
+.sub-college .img-college img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.sub-college .colleges .college {
+  box-shadow: 0px 0px 14px rgba(97, 97, 97, 0.14);
+  margin-bottom: 15px;
+}
+.sub-college .colleges .college a {
+  width: 100%;
+  padding: 20px;
+  display: block;
+  font-weight: 500;
+  font-size: 27.08px;
+  color: #565454 !important;
+}
+.sub-college .colleges .college a::before {
+  position: relative;
+  content: "\f054";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 10px;
+}
+
+.recruitment .heading .divider {
+  width: 126.9px;
+  height: 7.88px;
+  margin-bottom: 50px;
+}
+.recruitment h1 {
+  text-align: start !important;
+  font-weight: 500;
+  font-size: 40.06px;
+}
+.recruitment textarea,
+.recruitment input {
+  border-color: #d7d7d7;
+  height: 55.38px;
+}
+.recruitment textarea:focus,
+.recruitment input:focus {
+  border-color: #b82228;
+  box-shadow: none;
+}
+.recruitment textarea::placeholder,
+.recruitment input::placeholder {
+  color: #dbdbdb;
+}
+.recruitment textarea[type=submit],
+.recruitment input[type=submit] {
+  border-radius: 80px;
+  text-transform: uppercase;
+  width: 211.55px;
+  height: 66.41px;
+  transition: all 0.2s ease;
+  border: 1px solid #b82228;
+  background: #b82228;
+  color: white;
+}
+.recruitment textarea[type=submit]:hover,
+.recruitment input[type=submit]:hover {
+  background-color: white;
+  border-color: #b82228;
+  color: #b82228;
+}
+.recruitment textarea {
+  height: auto;
+}
+.recruitment input#file {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  opacity: 0;
+}
+.recruitment input#file ~ img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 17px;
+}
+
+/*# sourceMappingURL=pages.css.map */

@@ -1,0 +1,366 @@
+@import "./helpers.scss";
+
+header.pages-header {
+  position: relative;
+  height: 387px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba($color: #fff, $alpha: 0.88);
+  }
+
+  .toolbar {
+    background: none;
+    color: black;
+    border-bottom: 1px solid #d5d5d5;
+    .icons {
+      a {
+        border-color: black;
+      }
+    }
+  }
+  .heading {
+    h1 {
+      text-align: start;
+      margin-bottom: 30px;
+      font-weight: 700;
+      font-size: 30px;
+    }
+    ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+      li {
+        font-weight: 400;
+        font-size: 16px;
+        margin-top: 10px;
+        &.divide {
+          margin: 10px 10px 0;
+        }
+      }
+    }
+  }
+}
+
+.manger-word {
+  .heading {
+    .divider {
+      width: 89.8px;
+      height: 7.52px;
+    }
+  }
+  h1 {
+    text-align: start;
+  }
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 37px;
+  }
+}
+
+aside {
+  background: #f8f8f8;
+  padding: 10px 0;
+
+  ul li a,
+  h3 a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  h3 {
+    background-color: white;
+    font-size: 20px;
+    line-height: 37px;
+    padding: 20px 10px;
+    font-weight: 700;
+    a i {
+      font-size: 13px;
+    }
+  }
+  ul {
+    padding: 0;
+    li {
+      list-style: none;
+      padding: 0px 10px;
+      a {
+        padding: 16px 0;
+        border-bottom: 1px solid #c1c1c1;
+        font-weight: 500;
+        font-size: 16px;
+        i {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
+
+.about-us {
+  p {
+    line-height: 37px;
+    font-weight: 400;
+    font-size: 18px;
+  }
+  .top {
+    img.img-fluid {
+      width: 100%;
+    }
+    .wrapper {
+      h5 {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 37px;
+        margin: 0 10px;
+        color: $primary;
+      }
+    }
+  }
+  .head-img {
+    height: 710.49px;
+    img {
+      object-fit: contain;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .features {
+    .head {
+      margin-bottom: 20px;
+      margin-top: 30px;
+      img {
+        width: 25px;
+      }
+      h5 {
+        margin: 0 10px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        color: $primary;
+      }
+    }
+    ol {
+      padding: 13px;
+      li {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+.about-us,
+.faq .content {
+  .skills {
+    .skill {
+      margin-bottom: 17px;
+      &.opened {
+        .bar {
+          border: 1px solid #b82228;
+          transition: 0.5s ease all;
+        }
+        .cheveron {
+          border-top-color: #b82228 !important;
+          border-right-color: #b82228 !important;
+        }
+      }
+
+      .bar {
+        height: 55.38px;
+        display: flex;
+        cursor: pointer;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 6px;
+        border: 1px solid #d7d7d7;
+
+        h4 {
+          font-weight: 500;
+          font-size: 16px;
+          margin: 0 10px;
+        }
+        .bordered {
+          padding: 10px;
+          border: 1px solid #d7d7d7;
+          border-radius: 5px;
+          margin: 0px 10px;
+          .cheveron {
+            width: 15px;
+            height: 15px;
+            border: 3px solid black;
+            background-color: transparent;
+            border-bottom-color: transparent;
+            border-left-color: transparent;
+            transition: 0.5s ease all;
+          }
+        }
+
+        .cheveron-down {
+          transform: rotate(226deg);
+        }
+        .cheveron-up {
+          transform: rotate(135deg);
+        }
+      }
+      .text {
+        display: none;
+        margin-top: 14px;
+        font-weight: 400;
+        font-size: 18px;
+        color: #5a5a5a;
+        padding: 15px;
+      }
+      .active {
+        display: block;
+      }
+    }
+  }
+}
+
+.global-card {
+  .course-wrapper {
+    background-color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 26px;
+    &:hover {
+      .text h3 {
+        color: $primary;
+      }
+    }
+    .img {
+      height: 231px;
+      overflow: hidden;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .text {
+      text-align: center;
+      border: 1px solid #ececec;
+      color: #565454;
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      h3 {
+        margin: 0 auto;
+        color: inherit;
+        padding: 0 14px;
+        display: block;
+        width: 100%;
+        font-weight: 500;
+        font-size: 27.08px;
+        line-height: 34px;
+      }
+    }
+  }
+}
+
+.sub-college {
+  .head {
+    h4 {
+      font-weight: 500;
+      font-size: 28px;
+      color: #b82228;
+      margin: 0 10px;
+    }
+  }
+  .img-college {
+    height: 665.72px;
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .colleges {
+    .college {
+      box-shadow: 0px 0px 14px rgba(97, 97, 97, 0.14);
+      margin-bottom: 15px;
+      a {
+        width: 100%;
+        padding: 20px;
+        display: block;
+        font-weight: 500;
+        font-size: 27.08px;
+        color: #565454 !important;
+        &::before {
+          position: relative;
+          content: "\f054";
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+.recruitment {
+  .heading {
+    .divider {
+      width: 126.9px;
+      height: 7.88px;
+      margin-bottom: 50px;
+    }
+  }
+  h1 {
+    text-align: start !important;
+    font-weight: 500;
+    font-size: 40.06px;
+  }
+  textarea,
+  input {
+    border-color: #d7d7d7;
+    height: 55.38px;
+    &:focus {
+      border-color: $primary;
+      box-shadow: none;
+    }
+    &::placeholder {
+      color: #dbdbdb;
+    }
+    &[type="submit"] {
+      border-radius: 80px;
+      text-transform: uppercase;
+      width: 211.55px;
+      height: 66.41px;
+      transition: all 0.2s ease;
+      border: 1px solid #b82228;
+      background: #b82228;
+      color: white;
+      &:hover {
+        background-color: white;
+        border-color: #b82228;
+        color: #b82228;
+      }
+    }
+  }
+  textarea {
+    height: auto;
+  }
+  input#file {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    opacity: 0;
+    & ~ img {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 17px;
+    }
+  }
+}

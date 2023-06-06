@@ -5,6 +5,11 @@ html[dir=rtl] *:not(i) {
 html[dir=rtl] body {
   text-align: right;
 }
+html[dir=rtl] .sub-college .colleges .college a::before {
+  content: "\f104";
+  margin-left: 10px;
+  margin-right: 0;
+}
 
 html[dir=ltr] *:not(i) {
   font-family: "Century Gothic", sans-serif;
@@ -14,6 +19,12 @@ html[dir=ltr] .news .wrapper .fa-long-arrow-alt-left {
 }
 html[dir=ltr] .news .wrapper .fa-long-arrow-alt-right {
   display: inline;
+}
+html[dir=ltr] .news img.mx-3 {
+  transform: rotate(180deg);
+}
+html[dir=ltr] aside i {
+  transform: rotate(180deg);
 }
 
 @font-face {
@@ -34,6 +45,10 @@ html[dir=ltr] .news .wrapper .fa-long-arrow-alt-right {
 h1,
 h2 {
   font-weight: 700;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 .container {
