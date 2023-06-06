@@ -9,7 +9,7 @@ header {
     z-index: 2;
   }
   .toolbar {
-    padding: 24px 0;
+    padding: 15px 0;
     background: url(../imgs/toolbar.png) no-repeat;
     background-size: cover;
     text-align: center;
@@ -77,11 +77,15 @@ header {
     }
     .dropdown-item {
       text-align: center;
-      &.active,
-      &:active {
+      transition: all 0.3s ease;
+      &.hover,
+      &:hover {
         background-color: $primary;
         color: white !important;
       }
+    }
+    .nav-brand.nav-hide {
+      display: block;
     }
   }
 
@@ -153,10 +157,14 @@ header {
         margin: 0 2px;
         width: 56.03px;
         height: 52.67px;
-        background: #b82228;
+        background: #d6d6d6;
         border-radius: 10px 10px 0px 0px;
       }
     }
+  }
+
+  .nav-hide {
+    display: block;
   }
   @media #{$extraSmall} {
     height: 100vh;
@@ -173,8 +181,21 @@ header {
     }
   }
   @media (min-width: 992px) {
+    .navbar-expand-lg .navbar-toggler {
+      display: block !important;
+    }
+  }
+
+  @media (min-width: 1200px) {
     .navbar-collapse {
       background-color: transparent !important;
+    }
+
+    .navbar-expand-lg .navbar-toggler {
+      display: none !important;
+    }
+    .nav-hide {
+      display: none;
     }
   }
 }
@@ -515,12 +536,18 @@ header {
   text-align: left;
   color: #757575;
   background-color: #efefef;
+  background-position: center;
   img.logo {
     width: 100%;
     margin: auto;
     display: block;
     margin-bottom: 20px;
   }
+  a {
+    font-weight: 400;
+    font-size: 14px;
+  }
+
   .btn.btn-link {
     display: block;
     margin-bottom: 20px;
@@ -577,6 +604,11 @@ header {
   @media (max-width: 991px) {
     img.logo {
       max-width: 200px;
+    }
+  }
+  @media #{$minLarge} {
+    .social {
+      padding-left: 60px;
     }
   }
 }
