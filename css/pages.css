@@ -108,6 +108,10 @@ aside ul li a i {
   margin: 0 10px;
   color: #b82228;
 }
+.about-us .price {
+  color: #b82228;
+  font-weight: bold;
+}
 .about-us .head-img {
   height: 710.49px;
 }

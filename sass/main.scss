@@ -457,6 +457,11 @@ header {
       border-radius: 50%;
       border: 0.967339px solid #f8f8f8;
     }
+    img {
+      max-width: 100%;
+      height: auto;
+      padding: 8px;
+    }
   }
 
   .category-card .content-inner .content-front h4 {

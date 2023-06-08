@@ -47,8 +47,9 @@ h2 {
   font-weight: 700;
 }
 
+html,
 body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 .container {
