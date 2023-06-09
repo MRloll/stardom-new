@@ -72,8 +72,8 @@ header nav .navbar-collapse {
   border-radius: 10px;
   margin-top: 10px;
 }
-header nav li {
-  direction: ltr;
+header nav li a::after {
+  margin: 0 4px;
 }
 header nav .dropdown-menu {
   border: none;
@@ -88,6 +88,13 @@ header nav .dropdown-item {
   border-bottom: 1px solid #ededed;
   min-width: 222.38px;
   padding: 10px;
+  direction: ltr;
+}
+header nav .dropdown-item i {
+  font-size: 9px;
+}
+header nav .dropdown-item i.fa-chevron-right {
+  display: none;
 }
 header nav .dropdown-item.hover, header nav .dropdown-item:hover {
   background-color: #b82228;

@@ -23,6 +23,19 @@ html[dir=ltr] .news .wrapper .fa-long-arrow-alt-right {
 html[dir=ltr] .news img.mx-3 {
   transform: rotate(180deg);
 }
+html[dir=ltr] nav .dropdown-item {
+  direction: rtl;
+}
+html[dir=ltr] nav .dropdown-item i.fa-chevron-right {
+  display: inline;
+}
+html[dir=ltr] nav .dropdown-item i.fa-chevron-left {
+  display: none;
+}
+html[dir=ltr] header .carousel .arrows {
+  right: 140px;
+  left: auto;
+}
 html[dir=ltr] aside i {
   transform: rotate(180deg);
 }

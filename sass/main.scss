@@ -77,7 +77,12 @@ header {
       margin-top: 10px;
     }
     li {
-      direction: ltr;
+      a {
+        // direction: ltr;
+        &::after {
+          margin: 0 4px;
+        }
+      }
     }
 
     .dropdown-menu {
@@ -93,6 +98,13 @@ header {
       border-bottom: 1px solid #ededed;
       min-width: 222.38px;
       padding: 10px;
+      direction: ltr;
+      i {
+        font-size: 9px;
+        &.fa-chevron-right {
+          display: none;
+        }
+      }
 
       &.hover,
       &:hover {

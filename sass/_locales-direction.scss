@@ -30,6 +30,22 @@ html[dir="ltr"] {
     }
   }
 
+  nav {
+    .dropdown-item {
+      direction: rtl;
+      i.fa-chevron-right {
+        display: inline;
+      }
+      i.fa-chevron-left {
+        display: none;
+      }
+    }
+  }
+
+  header .carousel .arrows {
+    right: 140px;
+    left: auto;
+  }
   aside {
     i {
       transform: rotate(180deg);
