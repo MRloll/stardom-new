@@ -219,11 +219,19 @@ header .nav-hide {
 }
 
 .brief {
-  background-color: #a4a0a0;
   position: relative;
   text-align: center;
   background-position: center;
   background-size: cover;
+}
+.brief .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #a4a0a0;
+  opacity: 0.4;
 }
 .brief p {
   max-width: 759.83px;
