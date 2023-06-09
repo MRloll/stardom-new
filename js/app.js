@@ -9,7 +9,7 @@ $(document).ready(function () {
   );
 
   // Enable dropdown links to navigate on click
-  $(".navbar .dropdown-toggle").on("click", function (e) {
+  $(".navbar .nav-link").on("click", function (e) {
     window.location = $(e.target).attr("href");
     console.log($(e.target).attr("href"));
   });
