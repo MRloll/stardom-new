@@ -56,13 +56,14 @@ header nav.sticked {
   top: 0;
   width: 100%;
   background-color: white;
+  box-shadow: 0 -25px 30px 10px #000;
 }
 header nav.sticked .navbar-brand {
   height: 100px;
 }
 header nav .navbar-brand {
-  width: 137.4px;
-  height: 116.15px;
+  width: 160.4px;
+  height: 150.15px;
 }
 header nav .navbar-brand img {
   height: 100%;
@@ -71,6 +72,12 @@ header nav .navbar-collapse {
   background-color: white;
   border-radius: 10px;
   margin-top: 10px;
+}
+header nav li {
+  transition: color 0.5s ease;
+}
+header nav li:hover {
+  color: #b82228;
 }
 header nav li a::after {
   margin: 0 4px;
@@ -584,13 +591,19 @@ header .nav-hide {
   margin-right: 10px;
 }
 .footer .btn.btn-link:hover {
-  color: white;
+  color: #b82228 !important;
   letter-spacing: 1px;
   text-decoration: none;
 }
 .footer .btn.btn-square {
   color: #7f8499;
   border: 1px solid #7f8499;
+}
+.footer .social a {
+  transition: color 0.5s ease;
+}
+.footer .social a:hover {
+  color: #b82228 !important;
 }
 .footer a span {
   margin: 0 10px;
