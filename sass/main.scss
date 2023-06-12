@@ -216,6 +216,10 @@ header {
         }
       }
     }
+    .navbar-brand {
+      height: 100px !important;
+      width: auto !important;
+    }
   }
   @media (min-width: 992px) {
     .navbar-expand-lg .navbar-toggler {
@@ -277,12 +281,16 @@ header {
 
 .news {
   background-color: #f8f8f8;
+  .row > div {
+    margin-bottom: 30px;
+  }
   .wrapper {
     margin-bottom: 30px;
     background: #ffffff;
     box-shadow: 0px 0px 23.2161px rgba(0, 0, 0, 0.09);
     border-radius: 8.70605px;
     height: 100%;
+
     h3 {
       font-weight: 700;
       font-size: 18px;
