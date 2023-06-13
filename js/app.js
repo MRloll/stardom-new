@@ -93,7 +93,10 @@ $(document).ready(function () {
     if ($(window).scrollTop() > $(".toolbar").height()) {
       // give nav links position fixed on scroll
       $("nav").addClass("sticked");
+      $(".pages-header .heading").css("padding-top", $("nav").height());
     } else {
+      $(".pages-header .heading").css("padding-top", 0);
+
       $("nav").removeClass("sticked");
     }
   });
@@ -134,7 +137,11 @@ $(document).ready(function () {
 
   $("#file").change(function () {
     var file = $("#file")[0].files[0].name;
-    $(this).siblings("input").val(file);
+    $(".form-control.file").text(file);
+  });
+
+  $(".form-control.file").click(() => {
+    $("#file").click();
   });
 
   $(".recruitment input#number").keyup(function () {

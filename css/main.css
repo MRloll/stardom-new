@@ -60,6 +60,7 @@ header nav.sticked {
 }
 header nav.sticked .navbar-brand {
   height: 100px;
+  width: auto;
 }
 header nav .navbar-brand {
   width: 160.4px;

@@ -2,7 +2,7 @@
 
 header.pages-header {
   position: relative;
-  height: 387px;
+  min-height: 387px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -38,6 +38,15 @@ header.pages-header {
       }
     }
   }
+  @media #{$extraSmall} {
+    height: 432px;
+    .heading ul li {
+      font-size: 11px;
+    }
+    bdi {
+      font-size: 13px;
+    }
+  }
 }
 
 .manger-word {
@@ -60,12 +69,22 @@ header.pages-header {
 aside {
   background: #f8f8f8;
   padding: 10px 0;
-
+  margin-bottom: 20px;
   ul li a,
   h3 a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  ul li {
+    transition: background 0.5s ease;
+    &:hover {
+      background-color: $primary;
+      color: white;
+      a {
+        border-color: transparent;
+      }
+    }
   }
   h3 {
     background-color: white;
@@ -147,6 +166,11 @@ aside {
       li {
         margin-bottom: 10px;
       }
+    }
+  }
+  @media #{$extraSmall} {
+    .head-img {
+      height: auto;
     }
   }
 }
@@ -300,6 +324,11 @@ aside {
       }
     }
   }
+  @media #{$extraSmall} {
+    .colleges .college a {
+      font-size: 16px;
+    }
+  }
 }
 
 .recruitment {
@@ -345,11 +374,13 @@ aside {
   textarea {
     height: auto;
   }
-  input#file {
+  div.form-control.file {
     position: absolute;
     top: 0;
     height: 100%;
-    opacity: 0;
+  }
+
+  input#file {
     & ~ img {
       position: absolute;
       top: 50%;

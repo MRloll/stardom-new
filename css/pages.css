@@ -1,6 +1,6 @@
 header.pages-header {
   position: relative;
-  height: 387px;
+  min-height: 387px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -34,6 +34,17 @@ header.pages-header .heading ul li {
 header.pages-header .heading ul li.divide {
   margin: 10px 10px 0;
 }
+@media (max-width: 600px) {
+  header.pages-header {
+    height: 432px;
+  }
+  header.pages-header .heading ul li {
+    font-size: 11px;
+  }
+  header.pages-header bdi {
+    font-size: 13px;
+  }
+}
 
 .manger-word .heading .divider {
   width: 89.8px;
@@ -51,12 +62,23 @@ header.pages-header .heading ul li.divide {
 aside {
   background: #f8f8f8;
   padding: 10px 0;
+  margin-bottom: 20px;
 }
 aside ul li a,
 aside h3 a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+aside ul li {
+  transition: background 0.5s ease;
+}
+aside ul li:hover {
+  background-color: #b82228;
+  color: white;
+}
+aside ul li:hover a {
+  border-color: transparent;
 }
 aside h3 {
   background-color: white;
@@ -131,6 +153,11 @@ aside ul li a i {
 }
 .about-us .features ol li {
   margin-bottom: 10px;
+}
+@media (max-width: 600px) {
+  .about-us .head-img {
+    height: auto;
+  }
 }
 
 .about-us .skills .skill,
@@ -273,6 +300,11 @@ aside ul li a i {
   font-weight: 900;
   margin-right: 10px;
 }
+@media (max-width: 600px) {
+  .sub-college .colleges .college a {
+    font-size: 16px;
+  }
+}
 
 .recruitment .heading .divider {
   width: 126.9px;
@@ -318,11 +350,10 @@ aside ul li a i {
 .recruitment textarea {
   height: auto;
 }
-.recruitment input#file {
+.recruitment div.form-control.file {
   position: absolute;
   top: 0;
   height: 100%;
-  opacity: 0;
 }
 .recruitment input#file ~ img {
   position: absolute;
