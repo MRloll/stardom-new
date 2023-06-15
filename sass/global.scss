@@ -114,4 +114,13 @@ a {
   }
 }
 
-// globa card
+.navbar-nav {
+  @media (max-width: 650px) {
+    max-height: calc(100vh - 300px);
+    overflow: scroll;
+    .dropdown-menu {
+      box-shadow: none !important;
+      display: block !important;
+    }
+  }
+}

@@ -43,6 +43,41 @@
     <!-- header -->
     <!-- ============== -->
     <header>
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <form action="">
+              <div class="modal-header d-flex justify-content-between">
+                <h5 class="modal-title" id="exampleModalLabel">search</h5>
+                <button
+                  type="button"
+                  class="close mx-0"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <input type="text" class="form-control" placeholder="search" />
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="button" data-dismiss="modal">
+                  search
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
       <div class="top">
         <!-- toolbal -->
         <div class="toolbar">
@@ -77,9 +112,15 @@
               <div
                 class="text-center col-2 col-sm-3 d-flex align-items-center justify-content-end"
               >
-                <div class="text-end lang">EN</div>
+                <i
+                  class="fas fa-search mx-3 btn text-white"
+                  type="button"
+                  data-toggle="modal"
+                  data-target="#exampleModal"
+                ></i>
+                <a class="text-end lang">EN</a>
                 <span class="mx-1">|</span>
-                <div class="text-end lang">AR</div>
+                <a class="text-end lang">AR</a>
               </div>
             </div>
           </div>

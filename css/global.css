@@ -162,4 +162,15 @@ a:hover {
   color: white !important;
 }
 
+@media (max-width: 650px) {
+  .navbar-nav {
+    max-height: calc(100vh - 300px);
+    overflow: scroll;
+  }
+  .navbar-nav .dropdown-menu {
+    box-shadow: none !important;
+    display: block !important;
+  }
+}
+
 /*# sourceMappingURL=global.css.map */

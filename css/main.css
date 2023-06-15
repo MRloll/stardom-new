@@ -1,9 +1,12 @@
+header {
+  position: relative;
+}
 header .top {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 5;
 }
 header .toolbar {
   padding: 15px 0;
@@ -14,6 +17,9 @@ header .toolbar {
 }
 header .toolbar .wrapper {
   justify-content: center;
+}
+header .toolbar .fa-search {
+  cursor: pointer;
 }
 header .toolbar .icons {
   display: flex;
@@ -275,7 +281,7 @@ header .nav-hide {
 .news {
   background-color: #f8f8f8;
 }
-.news .row > div:not(:last-child) {
+.news .row > div {
   margin-bottom: 30px;
 }
 .news .wrapper {
@@ -529,7 +535,7 @@ header .nav-hide {
   font-size: 14px;
   border: 1px solid #d5d5d5;
   color: #757575;
-  z-index: 10;
+  z-index: 3;
 }
 .services .slider i.prev {
   left: -47px;
@@ -581,6 +587,7 @@ header .nav-hide {
   transform: translateY(-50%);
   font-size: 32.0123px;
   color: #535353;
+  z-index: 10;
   cursor: pointer;
 }
 .partners .slider i.next {

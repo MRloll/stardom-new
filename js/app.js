@@ -1,4 +1,19 @@
 $(document).ready(function () {
+  $(".navbar .nav-item.dropdown").hover(
+    function () {
+      $(this).find(".dropdown-menu").stop(true, true).delay(100).fadeIn(100);
+    },
+    function () {
+      $(this).find(".dropdown-menu").stop(true, true).delay(100).fadeOut(100);
+    }
+  );
+
+  // Enable dropdown links to navigate on click
+  $(".navbar .nav-link").on("click", function (e) {
+    window.location = $(e.target).attr("href");
+    console.log($(e.target).attr("href"));
+  });
+
   AOS.init({
     once: true,
   });
