@@ -14,7 +14,9 @@ $(document).ready(function () {
     console.log($(e.target).attr("href"));
   });
 
-  AOS.init();
+  AOS.init({
+    once: true,
+  });
   let scrollRef = 0;
 
   $(".loader").hide();
@@ -31,8 +33,8 @@ $(document).ready(function () {
   // services slider
   $(".services .slider").slick({
     slidesToShow: 4,
-    nextArrow: '<i class="fa next d-none d-md-flex fa-chevron-right"></i>',
-    prevArrow: '<i class="fa prev d-none d-md-flex fa-chevron-left"></i>',
+    nextArrow: '<i class="fa next d-flex  fa-chevron-right"></i>',
+    prevArrow: '<i class="fa prev d-flex fa-chevron-left"></i>',
     slidesToScroll: 1,
     autoplay: true,
     responsive: [
@@ -59,8 +61,8 @@ $(document).ready(function () {
 
   $(".partners .slider").slick({
     slidesToShow: 6,
-    nextArrow: '<i class="fa next d-none d-md-flex fa-chevron-right"></i>',
-    prevArrow: '<i class="fa prev d-none d-md-flex fa-chevron-left"></i>',
+    nextArrow: '<i class="fa next d-md-flex fa-chevron-right"></i>',
+    prevArrow: '<i class="fa prev d-md-flex fa-chevron-left"></i>',
     slidesToScroll: 1,
     autoplay: true,
     responsive: [
@@ -101,6 +103,11 @@ $(document).ready(function () {
     }
   });
 
+  if ($(window).width() < 992) {
+    $("aside h3").click(() => {
+      $("aside ul").slideToggle();
+    });
+  }
   //============================================
   //  what we do section (chevron) and slide down
   //============================================

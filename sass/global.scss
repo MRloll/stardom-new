@@ -63,6 +63,9 @@ body {
 
 section {
   padding: 60px 0;
+  @media #{$extraSmall} {
+    padding: 30px 0;
+  }
 }
 
 a {

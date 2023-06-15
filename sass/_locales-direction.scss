@@ -51,4 +51,12 @@ html[dir="ltr"] {
       transform: rotate(180deg);
     }
   }
+
+  .result {
+    .card {
+      i {
+        transform: rotate(180deg);
+      }
+    }
+  }
 }

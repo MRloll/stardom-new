@@ -39,6 +39,9 @@ html[dir=ltr] header .carousel .arrows {
 html[dir=ltr] aside i {
   transform: rotate(180deg);
 }
+html[dir=ltr] .result .card i {
+  transform: rotate(180deg);
+}
 
 @font-face {
   font-family: "Century Gothic";
@@ -101,6 +104,11 @@ body {
 
 section {
   padding: 60px 0;
+}
+@media (max-width: 600px) {
+  section {
+    padding: 30px 0;
+  }
 }
 
 a {

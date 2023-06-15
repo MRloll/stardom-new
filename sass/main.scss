@@ -37,7 +37,6 @@ header {
 
     .lang {
       text-transform: uppercase;
-      margin-top: 10px;
       text-align: center;
       cursor: pointer;
     }
@@ -205,10 +204,12 @@ header {
     display: block;
   }
   @media #{$extraSmall} {
-    height: 100vh;
+    height: 79vh;
     .carousel-item {
       height: 100% !important;
       .item-wrapper {
+        text-align: center;
+
         h1 {
           font-size: 23px !important;
         }
@@ -220,6 +221,9 @@ header {
     .navbar-brand {
       height: 100px !important;
       width: auto !important;
+    }
+    bdi {
+      font-size: 13px;
     }
   }
   @media (min-width: 992px) {
@@ -282,7 +286,7 @@ header {
 
 .news {
   background-color: #f8f8f8;
-  .row > div {
+  .row > div:not(:last-child) {
     margin-bottom: 30px;
   }
   .wrapper {
@@ -342,6 +346,15 @@ header {
     height: 38.22px;
     background: #3a3839;
     color: white !important;
+    margin-top: 30px !important;
+  }
+  @media #{$extraSmall} {
+    .wrapper {
+      text-align: center;
+      a {
+        justify-content: center;
+      }
+    }
   }
 }
 
@@ -560,6 +573,18 @@ header {
       }
     }
   }
+  @media #{$extraSmall} {
+    .slider {
+      i.prev {
+        left: -27px;
+        background-color: white !important;
+      }
+      i.next {
+        right: -27px;
+        background-color: white !important;
+      }
+    }
+  }
 }
 
 //partners
@@ -602,6 +627,16 @@ header {
       }
       &.prev {
         left: -20px;
+      }
+    }
+  }
+  @media #{$extraSmall} {
+    .slider i {
+      &.next {
+        right: 10px;
+      }
+      &.prev {
+        left: 10px;
       }
     }
   }
@@ -670,6 +705,7 @@ header {
   }
   .copy {
     p {
+      margin-top: 15px;
       margin-bottom: 0;
     }
     div {

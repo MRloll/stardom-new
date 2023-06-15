@@ -39,12 +39,9 @@ header.pages-header {
     }
   }
   @media #{$extraSmall} {
-    height: 432px;
+    height: 400px;
     .heading ul li {
       font-size: 11px;
-    }
-    bdi {
-      font-size: 13px;
     }
   }
 }
@@ -64,12 +61,25 @@ header.pages-header {
     font-size: 16px;
     line-height: 37px;
   }
+  @media #{$extraSmall} {
+    text-align: center;
+    h1 {
+      text-align: center;
+    }
+    .divider {
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+  }
 }
 
 aside {
   background: #f8f8f8;
   padding: 10px 0;
   margin-bottom: 20px;
+  h3 {
+    cursor: pointer;
+  }
   ul li a,
   h3 a {
     display: flex;
@@ -172,6 +182,15 @@ aside {
     .head-img {
       height: auto;
     }
+    * {
+      text-align: center;
+    }
+    .head {
+      justify-content: center;
+    }
+    ol {
+      display: inline-block;
+    }
   }
 }
 
@@ -232,7 +251,7 @@ aside {
         display: none;
         margin-top: 14px;
         font-weight: 400;
-        font-size: 18px;
+        font-size: 16px;
         color: #5a5a5a;
         padding: 15px;
       }
@@ -326,7 +345,10 @@ aside {
   }
   @media #{$extraSmall} {
     .colleges .college a {
-      font-size: 16px;
+      font-size: 19px;
+    }
+    .img-college {
+      height: auto;
     }
   }
 }
@@ -386,6 +408,82 @@ aside {
       top: 50%;
       transform: translateY(-50%);
       left: 17px;
+    }
+  }
+  @media #{$extraSmall} {
+    input[type="submit"] {
+      width: 100%;
+      border-radius: 20px;
+    }
+  }
+}
+
+.result {
+  .img {
+    h4 {
+      font-weight: 700;
+      font-size: 25.3005px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 19.5931px;
+      color: #737373;
+      margin-bottom: 50px;
+    }
+  }
+  .card {
+    background: #ffffff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.11);
+    border-radius: 8px;
+    padding: 33px;
+    margin-bottom: 20px;
+    h3 {
+      font-weight: 700;
+      font-size: 23.2434px;
+    }
+    p {
+      width: 103.39px;
+      height: 47.48px;
+      background: #dbffd5;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    ul {
+      padding: 0;
+      li {
+        list-style: none;
+        &:not(:last-of-type) {
+          border-bottom: 1px solid #dcdcdc;
+        }
+        a {
+          padding: 10px 0px;
+          display: inline-block;
+          color: #757575 !important;
+          transition: all 0.5s ease;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 26px;
+          span {
+            margin: 0 10px;
+          }
+          i {
+            transition: all 0.5s ease;
+            color: #757575 !important;
+          }
+        }
+        &:hover {
+          i,
+          a {
+            color: $primary !important;
+          }
+          a {
+            letter-spacing: 1px;
+          }
+        }
+      }
     }
   }
 }

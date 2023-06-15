@@ -36,13 +36,10 @@ header.pages-header .heading ul li.divide {
 }
 @media (max-width: 600px) {
   header.pages-header {
-    height: 432px;
+    height: 400px;
   }
   header.pages-header .heading ul li {
     font-size: 11px;
-  }
-  header.pages-header bdi {
-    font-size: 13px;
   }
 }
 
@@ -58,11 +55,26 @@ header.pages-header .heading ul li.divide {
   font-size: 16px;
   line-height: 37px;
 }
+@media (max-width: 600px) {
+  .manger-word {
+    text-align: center;
+  }
+  .manger-word h1 {
+    text-align: center;
+  }
+  .manger-word .divider {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
 
 aside {
   background: #f8f8f8;
   padding: 10px 0;
   margin-bottom: 20px;
+}
+aside h3 {
+  cursor: pointer;
 }
 aside ul li a,
 aside h3 a {
@@ -158,6 +170,15 @@ aside ul li a i {
   .about-us .head-img {
     height: auto;
   }
+  .about-us * {
+    text-align: center;
+  }
+  .about-us .head {
+    justify-content: center;
+  }
+  .about-us ol {
+    display: inline-block;
+  }
 }
 
 .about-us .skills .skill,
@@ -220,7 +241,7 @@ aside ul li a i {
   display: none;
   margin-top: 14px;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   color: #5a5a5a;
   padding: 15px;
 }
@@ -302,7 +323,10 @@ aside ul li a i {
 }
 @media (max-width: 600px) {
   .sub-college .colleges .college a {
-    font-size: 16px;
+    font-size: 19px;
+  }
+  .sub-college .img-college {
+    height: auto;
   }
 }
 
@@ -360,6 +384,76 @@ aside ul li a i {
   top: 50%;
   transform: translateY(-50%);
   left: 17px;
+}
+@media (max-width: 600px) {
+  .recruitment input[type=submit] {
+    width: 100%;
+    border-radius: 20px;
+  }
+}
+
+.result .img h4 {
+  font-weight: 700;
+  font-size: 25.3005px;
+  margin-bottom: 10px;
+}
+.result .img p {
+  font-weight: 400;
+  font-size: 19.5931px;
+  color: #737373;
+  margin-bottom: 50px;
+}
+.result .card {
+  background: #ffffff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.11);
+  border-radius: 8px;
+  padding: 33px;
+  margin-bottom: 20px;
+}
+.result .card h3 {
+  font-weight: 700;
+  font-size: 23.2434px;
+}
+.result .card p {
+  width: 103.39px;
+  height: 47.48px;
+  background: #dbffd5;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.result .card ul {
+  padding: 0;
+}
+.result .card ul li {
+  list-style: none;
+}
+.result .card ul li:not(:last-of-type) {
+  border-bottom: 1px solid #dcdcdc;
+}
+.result .card ul li a {
+  padding: 10px 0px;
+  display: inline-block;
+  color: #757575 !important;
+  transition: all 0.5s ease;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+}
+.result .card ul li a span {
+  margin: 0 10px;
+}
+.result .card ul li a i {
+  transition: all 0.5s ease;
+  color: #757575 !important;
+}
+.result .card ul li:hover i,
+.result .card ul li:hover a {
+  color: #b82228 !important;
+}
+.result .card ul li:hover a {
+  letter-spacing: 1px;
 }
 
 /*# sourceMappingURL=pages.css.map */
