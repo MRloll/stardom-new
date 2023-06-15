@@ -179,6 +179,9 @@ aside ul li a i {
   .about-us ol {
     display: inline-block;
   }
+  .about-us .price {
+    justify-content: center;
+  }
 }
 
 .about-us .skills .skill,
@@ -195,7 +198,9 @@ aside ul li a i {
   border-top-color: #b82228 !important;
   border-right-color: #b82228 !important;
 }
+.about-us .skills .skill .download,
 .about-us .skills .skill .bar,
+.faq .content .skills .skill .download,
 .faq .content .skills .skill .bar {
   height: 55.38px;
   display: flex;
@@ -205,20 +210,26 @@ aside ul li a i {
   border-radius: 6px;
   border: 1px solid #d7d7d7;
 }
+.about-us .skills .skill .download h4,
 .about-us .skills .skill .bar h4,
+.faq .content .skills .skill .download h4,
 .faq .content .skills .skill .bar h4 {
   font-weight: 500;
   font-size: 16px;
   margin: 0 10px;
 }
+.about-us .skills .skill .download .bordered,
 .about-us .skills .skill .bar .bordered,
+.faq .content .skills .skill .download .bordered,
 .faq .content .skills .skill .bar .bordered {
   padding: 10px;
   border: 1px solid #d7d7d7;
   border-radius: 5px;
   margin: 0px 10px;
 }
+.about-us .skills .skill .download .bordered .cheveron,
 .about-us .skills .skill .bar .bordered .cheveron,
+.faq .content .skills .skill .download .bordered .cheveron,
 .faq .content .skills .skill .bar .bordered .cheveron {
   width: 15px;
   height: 15px;
@@ -228,11 +239,15 @@ aside ul li a i {
   border-left-color: transparent;
   transition: 0.5s ease all;
 }
+.about-us .skills .skill .download .cheveron-down,
 .about-us .skills .skill .bar .cheveron-down,
+.faq .content .skills .skill .download .cheveron-down,
 .faq .content .skills .skill .bar .cheveron-down {
   transform: rotate(226deg);
 }
+.about-us .skills .skill .download .cheveron-up,
 .about-us .skills .skill .bar .cheveron-up,
+.faq .content .skills .skill .download .cheveron-up,
 .faq .content .skills .skill .bar .cheveron-up {
   transform: rotate(135deg);
 }
@@ -389,6 +404,13 @@ aside ul li a i {
   .recruitment input[type=submit] {
     width: 100%;
     border-radius: 20px;
+  }
+  .recruitment .heading h1 {
+    text-align: center !important;
+  }
+  .recruitment .heading .divider {
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 }
 

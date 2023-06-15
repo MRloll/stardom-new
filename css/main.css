@@ -340,6 +340,7 @@ header .nav-hide {
   }
   .news .wrapper a {
     justify-content: center;
+    padding-left: 0;
   }
 }
 
@@ -528,6 +529,7 @@ header .nav-hide {
   font-size: 14px;
   border: 1px solid #d5d5d5;
   color: #757575;
+  z-index: 10;
 }
 .services .slider i.prev {
   left: -47px;

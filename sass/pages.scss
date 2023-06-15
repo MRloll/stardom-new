@@ -191,6 +191,9 @@ aside {
     ol {
       display: inline-block;
     }
+    .price {
+      justify-content: center;
+    }
   }
 }
 
@@ -210,6 +213,7 @@ aside {
         }
       }
 
+      .download,
       .bar {
         height: 55.38px;
         display: flex;
@@ -414,6 +418,15 @@ aside {
     input[type="submit"] {
       width: 100%;
       border-radius: 20px;
+    }
+    .heading {
+      h1 {
+        text-align: center !important;
+      }
+      .divider {
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
     }
   }
 }

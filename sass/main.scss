@@ -353,6 +353,7 @@ header {
       text-align: center;
       a {
         justify-content: center;
+        padding-left: 0;
       }
     }
   }
@@ -564,7 +565,7 @@ header {
       font-size: 14px;
       border: 1px solid #d5d5d5;
       color: #757575;
-
+      z-index: 10;
       &.prev {
         left: -47px;
       }
