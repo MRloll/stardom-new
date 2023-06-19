@@ -432,6 +432,29 @@ aside {
 }
 
 .result {
+  form {
+    max-width: 800px;
+    margin: auto;
+    .wrapper {
+      width: 80%;
+      input {
+        width: 100%;
+        height: 100%;
+        &:focus {
+          border-color: $primary;
+          box-shadow: none;
+        }
+      }
+    }
+    input[type="submit"] {
+      width: 18%;
+      border: 1px solid $primary;
+      &:hover {
+        background-color: white;
+        color: #b82228;
+      }
+    }
+  }
   .img {
     h4 {
       font-weight: 700;
