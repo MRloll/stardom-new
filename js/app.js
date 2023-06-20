@@ -142,13 +142,16 @@ $(document).ready(function () {
     }
   });
 
-  $("#file").change(function () {
-    var file = $("#file")[0].files[0].name;
-    $(".form-control.file").text(file);
+  $("input[type='file']").change(function () {
+    var file = $(this)[0].files[0].name;
+    console.log($("this"));
+
+    $(this).siblings(".form-control.file").text(file);
   });
 
-  $(".form-control.file").click(() => {
-    $("#file").click();
+  $(".form-control.file").click((e) => {
+    let elem = $(e.target);
+    elem.siblings("#file").click();
   });
 
   $(".recruitment input#number").keyup(function () {
