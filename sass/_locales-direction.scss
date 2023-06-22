@@ -13,6 +13,10 @@ html[dir="rtl"] {
 }
 
 html[dir="ltr"] {
+  .sub-college .colleges .college {
+    margin-right: 0px;
+    margin-left: 31px;
+  }
   *:not(i) {
     font-family: "Century Gothic", sans-serif;
   }

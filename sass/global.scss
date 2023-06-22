@@ -115,9 +115,9 @@ a {
 }
 
 .navbar-nav {
-  @media (max-width: 650px) {
+  @media (max-width: 1199px) {
     max-height: calc(100vh - 300px);
-    overflow: scroll;
+    overflow-y: scroll;
     .dropdown-menu {
       box-shadow: none !important;
       display: block !important;

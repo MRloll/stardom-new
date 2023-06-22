@@ -11,6 +11,10 @@ html[dir=rtl] .sub-college .colleges .college a::before {
   margin-right: 0;
 }
 
+html[dir=ltr] .sub-college .colleges .college {
+  margin-right: 0px;
+  margin-left: 31px;
+}
 html[dir=ltr] *:not(i) {
   font-family: "Century Gothic", sans-serif;
 }
@@ -162,10 +166,10 @@ a:hover {
   color: white !important;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 1199px) {
   .navbar-nav {
     max-height: calc(100vh - 300px);
-    overflow: scroll;
+    overflow-y: scroll;
   }
   .navbar-nav .dropdown-menu {
     box-shadow: none !important;
