@@ -149,12 +149,12 @@ header {
     .carousel-item {
       text-align: inherit;
       height: 546px;
-      &::after {
-        content: "";
-        @include overlay(#fff);
-        @include opacity(0.88);
-        z-index: -1;
-      }
+      // &::after {
+      //   content: "";
+      //   @include overlay(#fff);
+      //   @include opacity(0.88);
+      //   z-index: -1;
+      // }
       .item-wrapper {
         height: 100%;
         display: flex;
