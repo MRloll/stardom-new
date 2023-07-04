@@ -16,7 +16,7 @@ header .toolbar {
   color: white;
 }
 header .toolbar .wrapper {
-  justify-content: center;
+  justify-content: space-between;
 }
 header .toolbar .fa-search {
   cursor: pointer;

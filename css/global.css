@@ -46,6 +46,10 @@ html[dir=ltr] aside i {
 html[dir=ltr] .result .card i {
   transform: rotate(180deg);
 }
+html[dir=ltr] .recruitment input#file ~ img {
+  left: auto;
+  right: 17px;
+}
 
 @font-face {
   font-family: "Century Gothic";
