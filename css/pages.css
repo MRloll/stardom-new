@@ -139,7 +139,7 @@ aside ul li a i {
   font-weight: bold;
 }
 .about-us .head-img {
-  height: 710.49px;
+  max-height: 710.49px;
 }
 .about-us .head-img img {
   object-fit: cover;
